@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50451337-C9AB-4E6C-B2E9-2CEF1B918276}</ProjectGuid>
+    <RootNamespace>antiword_winlib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\asc85enc.c" />
+    <ClCompile Include="..\blocklist.c" />
+    <ClCompile Include="..\chartrans.c" />
+    <ClCompile Include="..\datalist.c" />
+    <ClCompile Include="..\depot.c" />
+    <ClCompile Include="..\dib2eps.c" />
+    <ClCompile Include="..\doclist.c" />
+    <ClCompile Include="..\DOS-only\getopt.c" />
+    <ClCompile Include="..\fail.c" />
+    <ClCompile Include="..\finddata.c" />
+    <ClCompile Include="..\findtext.c" />
+    <ClCompile Include="..\fmt_text.c" />
+    <ClCompile Include="..\fontlist.c" />
+    <ClCompile Include="..\fonts.c" />
+    <ClCompile Include="..\hdrftrlist.c" />
+    <ClCompile Include="..\imgexam.c" />
+    <ClCompile Include="..\imgtrans.c" />
+    <ClCompile Include="..\jpeg2eps.c" />
+    <ClCompile Include="..\listlist.c" />
+    <ClCompile Include="..\notes.c" />
+    <ClCompile Include="..\options.c" />
+    <ClCompile Include="..\out2window.c" />
+    <ClCompile Include="..\output.c" />
+    <ClCompile Include="..\pdf.c" />
+    <ClCompile Include="..\pictlist.c" />
+    <ClCompile Include="..\png2eps.c" />
+    <ClCompile Include="..\postscript.c" />
+    <ClCompile Include="..\prop0.c" />
+    <ClCompile Include="..\prop2.c" />
+    <ClCompile Include="..\prop6.c" />
+    <ClCompile Include="..\prop8.c" />
+    <ClCompile Include="..\properties.c" />
+    <ClCompile Include="..\propmod.c" />
+    <ClCompile Include="..\rowlist.c" />
+    <ClCompile Include="..\sectlist.c" />
+    <ClCompile Include="..\stylelist.c" />
+    <ClCompile Include="..\stylesheet.c" />
+    <ClCompile Include="..\summary.c" />
+    <ClCompile Include="..\tabstop.c" />
+    <ClCompile Include="..\text.c" />
+    <ClCompile Include="..\unix.c" />
+    <ClCompile Include="..\utf8.c" />
+    <ClCompile Include="..\Win32-only\fonts_w.c" />
+    <ClCompile Include="..\Win32-only\misc_w.c" />
+    <ClCompile Include="..\word2text.c" />
+    <ClCompile Include="..\worddos.c" />
+    <ClCompile Include="..\wordlib.c" />
+    <ClCompile Include="..\wordmac.c" />
+    <ClCompile Include="..\wordole.c" />
+    <ClCompile Include="..\wordwin.c" />
+    <ClCompile Include="..\xmalloc.c" />
+    <ClCompile Include="..\xml.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
