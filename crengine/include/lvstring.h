@@ -1130,7 +1130,7 @@ public:
     : f(NULL)
     {
         if ( fname )
-            f = fopen( fname, "at" );
+            fopen_s( &f, fname, "at" );
         if ( !f )
             f = stdout;
         fprintf(f, "DumpFile log started\n");

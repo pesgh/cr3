@@ -27,7 +27,8 @@ public class Services {
 				
 		mEngine = Engine.getInstance(activity);
 		
-        String code = activity.settings().getProperty(ReaderView.PROP_HYPHENATION_DICT, Engine.HyphDict.RUSSIAN.toString());
+        //String code = activity.settings().getProperty(ReaderView.PROP_HYPHENATION_DICT, Engine.HyphDict.RUSSIAN.toString());
+		String code = activity.settings().getProperty(ReaderView.PROP_HYPHENATION_DICT, Engine.HyphDict.BOOK_LANGUAGE.toString());
         Engine.HyphDict dict = HyphDict.byCode(code);
 		mEngine.setHyphenationDictionary(dict);
 		

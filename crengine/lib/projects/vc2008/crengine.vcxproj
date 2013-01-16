@@ -34,31 +34,37 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release Lite|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug Lite|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -120,7 +126,7 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" />
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Work\GitHub\cr3\thirdparty\zlib;E:\Work\GitHub\cr3\thirdparty\libpng;E:\Work\GitHub\cr3\thirdparty\freetype\include;E:\Work\GitHub\cr3\thirdparty\jpeg-8d;E:\Work\GitHub\cr3\thirdparty\antiword;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\thirdparty\zlib;..\..\..\..\thirdparty\libpng;..\..\..\..\thirdparty\freetype\include;..\..\..\..\thirdparty\jpeg-8d;..\..\..\..\thirdparty\antiword;$(IncludePath)</IncludePath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Work\GitHub\cr3\thirdparty\zlib;E:\Work\GitHub\cr3\thirdparty\libpng;E:\Work\GitHub\cr3\thirdparty\freetype\include;E:\Work\GitHub\cr3\thirdparty\jpeg-8d;E:\Work\GitHub\cr3\thirdparty\antiword;$(IncludePath)</IncludePath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Unicode Debug Lite|Win32'">E:\Work\GitHub\cr3\thirdparty\zlib;E:\Work\GitHub\cr3\thirdparty\libpng;E:\Work\GitHub\cr3\thirdparty\freetype\include;E:\Work\GitHub\cr3\thirdparty\jpeg-8d;E:\Work\GitHub\cr3\thirdparty\antiword;$(IncludePath)</IncludePath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">E:\Work\GitHub\cr3\thirdparty\zlib;E:\Work\GitHub\cr3\thirdparty\libpng;E:\Work\GitHub\cr3\thirdparty\freetype\include;E:\Work\GitHub\cr3\thirdparty\jpeg-8d;E:\Work\GitHub\cr3\thirdparty\antiword;$(IncludePath)</IncludePath>

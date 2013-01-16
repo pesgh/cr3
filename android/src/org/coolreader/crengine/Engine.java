@@ -606,16 +606,16 @@ public class Engine {
 		public final static HyphDict NONE = new HyphDict("NONE", HYPH_NONE, 0, "[None]", "");
 		public final static HyphDict ALGORITHM = new HyphDict("ALGORITHM", HYPH_ALGO, 0, "[Algorythmic]", ""); 
 		public final static HyphDict BOOK_LANGUAGE = new HyphDict("BOOK LANGUAGE", HYPH_BOOK, 0, "[From Book Language]", ""); 
-		public final static HyphDict RUSSIAN = new HyphDict("RUSSIAN", HYPH_DICT, R.raw.russian_enus_hyphen, "Russian", "ru"); 
-		public final static HyphDict ENGLISH = new HyphDict("ENGLISH", HYPH_DICT, R.raw.english_us_hyphen, "English US", "en"); 
-		public final static HyphDict GERMAN = new HyphDict("GERMAN", HYPH_DICT, R.raw.german_hyphen, "German", "de"); 
-		public final static HyphDict UKRAINIAN = new HyphDict("UKRAINIAN", HYPH_DICT,R.raw.ukrain_hyphen, "Ukrainian", "uk"); 
-		public final static HyphDict SPANISH = new HyphDict("SPANISH", HYPH_DICT,R.raw.spanish_hyphen, "Spanish", "es"); 
-		public final static HyphDict FRENCH = new HyphDict("FRENCH", HYPH_DICT,R.raw.french_hyphen, "French", "fr"); 
-		public final static HyphDict BULGARIAN = new HyphDict("BULGARIAN", HYPH_DICT, R.raw.bulgarian_hyphen, "Bulgarian", "bg"); 
-		public final static HyphDict SWEDISH = new HyphDict("SWEDISH", HYPH_DICT, R.raw.swedish_hyphen, "Swedish", "sv"); 
-		public final static HyphDict POLISH = new HyphDict("POLISH", HYPH_DICT, R.raw.polish_hyphen, "Polish", "pl");
-		public final static HyphDict HUNGARIAN = new HyphDict("HUNGARIAN", HYPH_DICT, R.raw.hungarian_hyphen, "Hungarian", "hu");
+		//public final static HyphDict RUSSIAN = new HyphDict("RUSSIAN", HYPH_DICT, R.raw.russian_enus_hyphen, "Russian", "ru"); 
+		//public final static HyphDict ENGLISH = new HyphDict("ENGLISH", HYPH_DICT, R.raw.english_us_hyphen, "English US", "en"); 
+		//public final static HyphDict GERMAN = new HyphDict("GERMAN", HYPH_DICT, R.raw.german_hyphen, "German", "de"); 
+		//public final static HyphDict UKRAINIAN = new HyphDict("UKRAINIAN", HYPH_DICT,R.raw.ukrain_hyphen, "Ukrainian", "uk"); 
+		//public final static HyphDict SPANISH = new HyphDict("SPANISH", HYPH_DICT,R.raw.spanish_hyphen, "Spanish", "es"); 
+		//public final static HyphDict FRENCH = new HyphDict("FRENCH", HYPH_DICT,R.raw.french_hyphen, "French", "fr"); 
+		//public final static HyphDict BULGARIAN = new HyphDict("BULGARIAN", HYPH_DICT, R.raw.bulgarian_hyphen, "Bulgarian", "bg"); 
+		//public final static HyphDict SWEDISH = new HyphDict("SWEDISH", HYPH_DICT, R.raw.swedish_hyphen, "Swedish", "sv"); 
+		//public final static HyphDict POLISH = new HyphDict("POLISH", HYPH_DICT, R.raw.polish_hyphen, "Polish", "pl");
+		//public final static HyphDict HUNGARIAN = new HyphDict("HUNGARIAN", HYPH_DICT, R.raw.hungarian_hyphen, "Hungarian", "hu");
 		public final static HyphDict GREEK = new HyphDict("GREEK", HYPH_DICT, R.raw.greek_hyphen, "Greek", "el");
 
 		public final String code;

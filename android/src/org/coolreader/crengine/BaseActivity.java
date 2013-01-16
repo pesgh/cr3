@@ -1579,7 +1579,8 @@ public class BaseActivity extends Activity implements Settings {
 			
 			props.setProperty(ReaderView.PROP_MIN_FILE_SIZE_TO_CACHE, "100000");
 			props.setProperty(ReaderView.PROP_FORCED_MIN_FILE_SIZE_TO_CACHE, "32768");
-			props.applyDefault(ReaderView.PROP_HYPHENATION_DICT, Engine.HyphDict.RUSSIAN.toString());
+			//props.applyDefault(ReaderView.PROP_HYPHENATION_DICT, Engine.HyphDict.RUSSIAN.toString());
+			props.applyDefault(ReaderView.PROP_HYPHENATION_DICT, Engine.HyphDict.BOOK_LANGUAGE.toString());
 			props.applyDefault(ReaderView.PROP_APP_FILE_BROWSER_SIMPLE_MODE, "0");
 			
 			props.applyDefault(ReaderView.PROP_STATUS_LOCATION, Settings.VIEWER_STATUS_PAGE);

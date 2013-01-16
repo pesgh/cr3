@@ -128,7 +128,7 @@ public:
     virtual void DrawTo( LVDrawBuf * buf, int x, int y, int options, lUInt32 * palette ) = 0;
     /// draws rescaled buffer content to another buffer doing color conversion if necessary
     virtual void DrawRescaled(LVDrawBuf * src, int x, int y, int dx, int dy, int options) = 0;
-#if !defined(__SYMBIAN32__) && defined(_WIN32)
+#if !defined(__SYMBIAN32__) && defined(_WIN32) && defined(USE_WIN_GDI)
     /// draws buffer content to another buffer doing color conversion if necessary
     virtual void DrawTo( HDC dc, int x, int y, int options, lUInt32 * palette ) = 0;
 #endif
@@ -271,7 +271,7 @@ public:
     virtual void DrawTo( LVDrawBuf * buf, int x, int y, int options, lUInt32 * palette );
     /// draws rescaled buffer content to another buffer doing color conversion if necessary
     virtual void DrawRescaled(LVDrawBuf * src, int x, int y, int dx, int dy, int options);
-#if !defined(__SYMBIAN32__) && defined(_WIN32)
+#if !defined(__SYMBIAN32__) && defined(_WIN32) && defined(USE_WIN_GDI)
     /// draws buffer content to another buffer doing color conversion if necessary
     virtual void DrawTo( HDC dc, int x, int y, int options, lUInt32 * palette );
 #endif
@@ -322,7 +322,7 @@ inline lUInt16 rgb888to565(lUInt32 cl ) {
 class LVColorDrawBuf : public LVBaseDrawBuf
 {
 private:
-#if !defined(__SYMBIAN32__) && defined(_WIN32)
+#if !defined(__SYMBIAN32__) && defined(_WIN32) && defined(USE_WIN_GDI)
     HDC _drawdc;
     HBITMAP _drawbmp;
 #endif
@@ -339,7 +339,7 @@ public:
     virtual void DrawTo( LVDrawBuf * buf, int x, int y, int options, lUInt32 * palette );
     /// draws rescaled buffer content to another buffer doing color conversion if necessary
     virtual void DrawRescaled(LVDrawBuf * src, int x, int y, int dx, int dy, int options);
-#if !defined(__SYMBIAN32__) && defined(_WIN32)
+#if !defined(__SYMBIAN32__) && defined(_WIN32) && defined(USE_WIN_GDI)
     /// draws buffer content to another buffer doing color conversion if necessary
     virtual void DrawTo( HDC dc, int x, int y, int options, lUInt32 * palette );
 #endif
@@ -374,7 +374,7 @@ public:
     virtual ~LVColorDrawBuf();
     /// convert to 1-bit bitmap
     void ConvertToBitmap(bool flgDither);
-#if !defined(__SYMBIAN32__) && defined(_WIN32)
+#if !defined(__SYMBIAN32__) && defined(_WIN32) && defined(USE_WIN_GDI)
     /// returns device context for bitmap buffer
     HDC GetDC() { return _drawdc; }
 #endif
